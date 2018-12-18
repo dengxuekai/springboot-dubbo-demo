@@ -1,0 +1,15 @@
+server:
+  port: 7800
+
+spring:
+  application:
+    name: dubbo-consumer
+
+dubbo:
+  application:
+    name: dubbo-consumer
+    id: dubbo-consumer
+  registry:
+    id: local
+    protocol: zookeeper
+    address: 10.211.81.43:2181
